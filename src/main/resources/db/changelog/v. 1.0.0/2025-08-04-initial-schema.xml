@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet id="2025-08-04-create-table-account-settings" author="zaicev">
+        <createTable tableName="account_settings">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="need_notification" type="boolean" defaultValueBoolean="true"/>
+            <column name="notification_type" type="varchar(255)" defaultValue="EMAIL"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2025-08-04-create-table-account" author="zaicev">
+        <createTable tableName="account">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="first_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="varchar(255)"/>
+            <column name="email_verified" type="boolean" defaultValueBoolean="false"/>
+            <column name="phone_number" type="varchar(255)"/>
+            <column name="phone_number_verified" type="boolean" defaultValueBoolean="false"/>
+            <column name="created_at" type="datetime"/>
+            <column name="account_setting_id" type="int">
+                <constraints nullable="false" foreignKeyName="account_settings_fk" referencedTableName="account_settings" referencedColumnNames="id"/>
+            </column>
+
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
