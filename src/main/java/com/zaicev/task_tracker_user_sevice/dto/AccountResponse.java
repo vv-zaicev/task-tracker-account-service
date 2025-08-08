@@ -12,13 +12,11 @@ import java.time.LocalDateTime;
 @Builder
 public class AccountResponse {
     Long id;
-    String username;
     String firstName;
     String lastName;
     String email;
     boolean emailVerified;
     String phoneNumber;
     boolean phoneNumberVerified;
-    LocalDateTime createdAt;
     AccountSettingResponse accountSetting;
 }
