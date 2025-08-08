@@ -28,7 +28,6 @@ class AccountRepositoryIntegrationTest {
 
     @Test
     void testFindAllAccountWithNeedNotification() {
-        // given
         AccountSetting setting1 = new AccountSetting();
         setting1.setNeedNotification(true);
 
@@ -55,12 +54,10 @@ class AccountRepositoryIntegrationTest {
 
         Pageable pageable = PageRequest.of(0, 10);
 
-        // when
         Page<Account> result = accountRepository.findAllAccountWithNeedNotification(pageable);
 
-        // then
         assertThat(result.getContent()).hasSize(1);
-        assertThat(result.getContent().get(0).getEmail().equals("test1@example.com"));
+        assertThat(result.getContent().get(0).getEmail()).isEqualTo("test1@example.com");
         assertThat(result.getContent().get(0).getAccountSetting().isNeedNotification()).isTrue();
     }
 }
