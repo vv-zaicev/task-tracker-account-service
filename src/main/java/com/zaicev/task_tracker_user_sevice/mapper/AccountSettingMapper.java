@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class AccountSettingMapper {
-    public AccountSettingResponse toAccountSettingReponse(AccountSetting accountSetting) {
+    public AccountSettingResponse toAccountSettingResponse(AccountSetting accountSetting) {
         return new AccountSettingResponse(accountSetting.isNeedNotification(), accountSetting.getNotificationType());
     }
 }

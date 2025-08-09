@@ -17,7 +17,7 @@ public class AccountSettingMapperTest {
     @Test
     void toAccountSettingResponse_ShouldMapAccountSettingToAccountSettingResponse() {
 
-        AccountSettingResponse result = accountSettingMapper.toAccountSettingReponse(accountSetting);
+        AccountSettingResponse result = accountSettingMapper.toAccountSettingResponse(accountSetting);
 
         assertNotNull(result);
         assertTrue(result.isNeedNotification());

@@ -47,7 +47,7 @@ public class AccountMapperTest {
 
     @Test
     void toAccountResponse_ShouldMapAccountToAccountResponse() {
-        when(accountSettingMapper.toAccountSettingReponse(accountSetting)).thenReturn(expectedAccountSettingResponse);
+        when(accountSettingMapper.toAccountSettingResponse(accountSetting)).thenReturn(expectedAccountSettingResponse);
 
         AccountResponse result = accountMapper.toAccountResponse(account);
 

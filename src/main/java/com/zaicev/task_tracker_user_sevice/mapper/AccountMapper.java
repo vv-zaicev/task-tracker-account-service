@@ -24,7 +24,7 @@ public class AccountMapper {
                 .emailVerified(account.isEmailVerified())
                 .phoneNumber(account.getPhoneNumber())
                 .phoneNumberVerified(account.isPhoneNumberVerified())
-                .accountSetting(accountSettingMapper.toAccountSettingReponse(account.getAccountSetting()))
+                .accountSetting(accountSettingMapper.toAccountSettingResponse(account.getAccountSetting()))
                 .build();
     }
 
