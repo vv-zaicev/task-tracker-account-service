@@ -1,12 +1,10 @@
-package com.zaicev.task_tracker_user_sevice.dto;
+package com.zaicev.task_tracker_account_service.dto;
 
 import lombok.Builder;
 import lombok.Value;
 
-import java.time.LocalDateTime;
-
 /**
- * DTO for {@link com.zaicev.task_tracker_user_sevice.model.Account}
+ * DTO for {@link com.zaicev.task_tracker_account_service.model.Account}
  */
 @Value
 @Builder

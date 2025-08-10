@@ -1,13 +1,13 @@
-package com.zaicev.task_tracker_user_sevice;
+package com.zaicev.task_tracker_account_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TaskTrackerUserSeviceApplication {
+public class TaskTrackerAccountServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TaskTrackerUserSeviceApplication.class, args);
+		SpringApplication.run(TaskTrackerAccountServiceApplication.class, args);
 	}
 
 }

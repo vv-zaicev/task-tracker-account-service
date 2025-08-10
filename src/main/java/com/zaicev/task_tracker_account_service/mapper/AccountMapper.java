@@ -1,10 +1,10 @@
-package com.zaicev.task_tracker_user_sevice.mapper;
+package com.zaicev.task_tracker_account_service.mapper;
 
-import com.zaicev.task_tracker_user_sevice.dto.AccountForNotificationPageResponse;
-import com.zaicev.task_tracker_user_sevice.dto.AccountForNotificationResponse;
-import com.zaicev.task_tracker_user_sevice.dto.AccountResponse;
-import com.zaicev.task_tracker_user_sevice.dto.NamesResponse;
-import com.zaicev.task_tracker_user_sevice.model.Account;
+import com.zaicev.task_tracker_account_service.dto.AccountForNotificationPageResponse;
+import com.zaicev.task_tracker_account_service.dto.AccountForNotificationResponse;
+import com.zaicev.task_tracker_account_service.dto.AccountResponse;
+import com.zaicev.task_tracker_account_service.dto.NamesResponse;
+import com.zaicev.task_tracker_account_service.model.Account;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package com.zaicev.task_tracker_user_sevice.dto;
+package com.zaicev.task_tracker_account_service.dto;
 
 import lombok.Value;
 

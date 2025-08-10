@@ -1,4 +1,4 @@
-package com.zaicev.task_tracker_user_sevice.model;
+package com.zaicev.task_tracker_account_service.model;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -26,12 +26,14 @@ public class Account {
     private String email;
 
     @Column(name = "email_verified")
+    @Builder.Default
     private boolean emailVerified = false;
 
     @Column(name = "phone_number")
     private String phoneNumber;
 
     @Column(name = "phone_number_verified")
+    @Builder.Default
     private boolean phoneNumberVerified = false;
 
     @Column(name = "created_at")
@@ -39,6 +41,7 @@ public class Account {
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "account_setting_id", referencedColumnName = "id")
+    @Builder.Default
     private AccountSetting accountSetting = new AccountSetting();
 
 }

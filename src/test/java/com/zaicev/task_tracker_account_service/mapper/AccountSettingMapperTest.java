@@ -1,9 +1,9 @@
-package com.zaicev.task_tracker_user_sevice.mapper;
+package com.zaicev.task_tracker_account_service.mapper;
 
 
-import com.zaicev.task_tracker_user_sevice.dto.AccountSettingResponse;
-import com.zaicev.task_tracker_user_sevice.model.AccountSetting;
-import com.zaicev.task_tracker_user_sevice.model.NotificationType;
+import com.zaicev.task_tracker_account_service.dto.AccountSettingResponse;
+import com.zaicev.task_tracker_account_service.model.AccountSetting;
+import com.zaicev.task_tracker_account_service.model.NotificationType;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

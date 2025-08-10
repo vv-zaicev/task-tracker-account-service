@@ -1,6 +1,6 @@
-package com.zaicev.task_tracker_user_sevice.repository;
+package com.zaicev.task_tracker_account_service.repository;
 
-import com.zaicev.task_tracker_user_sevice.model.Account;
+import com.zaicev.task_tracker_account_service.model.Account;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,7 +1,7 @@
-package com.zaicev.task_tracker_user_sevice.service;
+package com.zaicev.task_tracker_account_service.service;
 
-import com.zaicev.task_tracker_user_sevice.model.Account;
-import com.zaicev.task_tracker_user_sevice.repository.AccountRepository;
+import com.zaicev.task_tracker_account_service.model.Account;
+import com.zaicev.task_tracker_account_service.repository.AccountRepository;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;

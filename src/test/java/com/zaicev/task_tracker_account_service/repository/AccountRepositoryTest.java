@@ -1,9 +1,9 @@
-package com.zaicev.task_tracker_user_sevice.repository;
+package com.zaicev.task_tracker_account_service.repository;
 
 
-import com.zaicev.task_tracker_user_sevice.MyTestcontainersConfiguration;
-import com.zaicev.task_tracker_user_sevice.model.Account;
-import com.zaicev.task_tracker_user_sevice.model.AccountSetting;
+import com.zaicev.task_tracker_account_service.MyTestcontainersConfiguration;
+import com.zaicev.task_tracker_account_service.model.Account;
+import com.zaicev.task_tracker_account_service.model.AccountSetting;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

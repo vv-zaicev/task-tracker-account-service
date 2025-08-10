@@ -1,9 +1,8 @@
-package com.zaicev.task_tracker_user_sevice;
+package com.zaicev.task_tracker_account_service;
 
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.PropertySource;
 import org.testcontainers.containers.PostgreSQLContainer;
 
 

@@ -1,4 +1,4 @@
-package com.zaicev.task_tracker_user_sevice.model;
+package com.zaicev.task_tracker_account_service.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

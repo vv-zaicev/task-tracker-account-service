@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.zaicev</groupId>
-	<artifactId>task-tracker-user-service</artifactId>
+	<artifactId>task-tracker-account-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>task-tracker-user-service</name>
+	<name>task-tracker-account-service</name>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

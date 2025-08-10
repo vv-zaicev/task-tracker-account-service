@@ -1,4 +1,4 @@
-package com.zaicev.task_tracker_user_sevice;
+package com.zaicev.task_tracker_account_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Import;
 
 @SpringBootTest
 @Import(MyTestcontainersConfiguration.class)
-class TaskTrackerUserSeviceApplicationTests {
+class TaskTrackerAccountServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
