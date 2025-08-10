@@ -1,20 +1,21 @@
 package com.zaicev.task_tracker_user_sevice.repository;
 
+
+import com.zaicev.task_tracker_user_sevice.MyTestcontainersConfiguration;
 import com.zaicev.task_tracker_user_sevice.model.Account;
 import com.zaicev.task_tracker_user_sevice.model.AccountSetting;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.testcontainers.context.ImportTestcontainers;
+import org.springframework.context.annotation.Import;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import org.testcontainers.utility.TestcontainersConfiguration;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
-@ImportTestcontainers(TestcontainersConfiguration.class)
+@Import(MyTestcontainersConfiguration.class)
 class AccountRepositoryIntegrationTest {
 
     @Autowired
