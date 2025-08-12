@@ -80,7 +80,7 @@ public class AvatarRepositoryIntegrationTest {
     }
 
     @Test
-    void deleteObject_ShouldSuccess() throws Exception {
+    void deleteAvatar_ShouldSuccess() throws Exception {
         byte[] data = "to-delete".getBytes();
         minioClient.putObject(PutObjectArgs.builder()
                 .bucket(BUCKET_NAME)
@@ -88,7 +88,7 @@ public class AvatarRepositoryIntegrationTest {
                 .stream(new ByteArrayInputStream(data), data.length, -1)
                 .build());
 
-        avatarRepository.deleteObject(3L);
+        avatarRepository.deleteAvatar(3L);
         assertFalse(avatarRepository.isAvatarExist(3L));
     }
 

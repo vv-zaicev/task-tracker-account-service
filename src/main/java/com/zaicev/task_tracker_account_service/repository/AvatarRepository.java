@@ -75,7 +75,7 @@ public class AvatarRepository {
         }
     }
 
-    public void deleteObject(Long userId) throws IOException, MinioException, GeneralSecurityException {
+    public void deleteAvatar(Long userId) throws IOException, MinioException, GeneralSecurityException {
         minioClient.removeObject(RemoveObjectArgs.builder()
                 .bucket(AVATAR_BUCKET_NAME)
                 .object(ACCOUNT_AVATAR_PATH_TEMPLATE.formatted(userId))
